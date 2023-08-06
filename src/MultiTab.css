@@ -1,11 +1,9 @@
-/* Set background image for the body element */
 body {
   background-image: url('./assets/background.jpeg');
   background-size: cover;
   background-position: center;
 }
 
-/* Rest of the CSS remains the same */
 .container {
   max-width: auto;
   margin: 0 auto;
@@ -63,7 +61,7 @@ body {
 .form-container {
   margin-top: 20px;
   max-width: 800px;
-  margin: 0 auto; /* Add this line to center the form */
+  margin: 0 auto; 
 }
 
 .form-container h4 {

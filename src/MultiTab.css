@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
+  font-family: 'Poppins', sans-serif;
   background-image: url('./assets/background.jpeg');
   background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: auto;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -61,7 +66,7 @@ body {
 .form-container {
   margin-top: 20px;
   max-width: 800px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .form-container h4 {
@@ -94,4 +99,57 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .tab-nav {
+    flex-direction: column;
+  }
+
+  .tab-link {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider-container {
+    flex-direction: column;
+  }
+
+  .slider-button,
+  .slider-image {
+    margin: 5px 0;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .tab-link {
+    padding: 12px;
+  }
+
+  .slider-container {
+    flex-direction: column;
+  }
+
+  .slider-button,
+  .slider-image {
+    margin: 5px 0;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
 }
